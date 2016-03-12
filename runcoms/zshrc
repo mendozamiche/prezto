@@ -11,3 +11,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export ANDROID_HOME=/Users/michelle/Library/Android/sdk
+export PATH=$ANDROID_HOME/tools:$PATH
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+
+alias ggandroid='cd ~/code/greengage-mobile-android'
+alias ggrails='cd ~/code/green_gauge_rails'
+alias ggios='cd ~/code/greengage-ios'
+
+alias be='bundle exec'
+
+alias ts='tig status'
+eval "$(rbenv init -)"
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+alias ls='ls -FG'
+alias ll='ls -alF'
+
